@@ -4,7 +4,7 @@ import com.example.petback.entity.SocialSharing;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
-
+@Mapper
 public interface SocialSharingMapper {
 
     @Insert("INSERT INTO socialsharing (userId, sharingContent) VALUES (#{userId}, #{sharingContent})")

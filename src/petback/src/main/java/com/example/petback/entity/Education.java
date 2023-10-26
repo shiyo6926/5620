@@ -4,9 +4,7 @@ public class Education {
     private int educationId;
     private int userId;
     private String educationName;
-    private String tag;
     private String educationContent;
-    private String reason;
 
     public Education() {
     }
@@ -15,9 +13,7 @@ public class Education {
         this.educationId = educationId;
         this.userId = userId;
         this.educationName = educationName;
-        this.tag = tag;
         this.educationContent = educationContent;
-        this.reason = reason;
     }
 
     public int getEducationId() {
@@ -36,35 +32,19 @@ public class Education {
         this.userId = userId;
     }
 
-    public String getProductName() {
+    public String getEducationName() {
         return educationName;
     }
 
-    public void setProductName(String educationName) {
+    public void setEducationName(String educationName) {
         this.educationName = educationName;
     }
 
-    public String getTag() {
-        return tag;
-    }
-
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
-
-    public String getReason() {
-        return reason;
-    }
-
-    public void setReason(String reason) {
-        this.reason = reason;
-    }
-
-    public String getProductInformation() {
+    public String getEducationContent() {
         return educationContent;
     }
 
-    public void setProductInformation(String educationContent) {
+    public void setEducationContent(String educationContent) {
         this.educationContent = educationContent;
     }
 }

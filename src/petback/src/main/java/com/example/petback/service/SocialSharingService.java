@@ -2,12 +2,15 @@ package com.example.petback.service;
 
 import com.example.petback.entity.SocialSharing;
 import com.example.petback.mapper.SocialSharingMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
+@Service
 public class SocialSharingService {
+    @Autowired
     private SocialSharingMapper socialSharingMapper;
 
     public SocialSharing addSocialSharing(SocialSharing socialSharing) {
@@ -25,6 +28,7 @@ public class SocialSharingService {
 
         // 调用 Mapper 插入数据
         socialSharingMapper.addSocialSharing(socialSharing);
+        socialSharing.setReason("successful");
         List<SocialSharing> getSocialSharinglist = socialSharingMapper.getSocialSharingList(socialSharing);
         return getSocialSharinglist.get(0);
     }
