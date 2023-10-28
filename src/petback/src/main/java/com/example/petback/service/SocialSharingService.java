@@ -1,5 +1,6 @@
 package com.example.petback.service;
 
+import com.example.petback.entity.Education;
 import com.example.petback.entity.SocialSharing;
 import com.example.petback.mapper.SocialSharingMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -87,8 +88,12 @@ public class SocialSharingService {
             return listbyuser;
         }
 
-
         // 调用 Mapper 获取数据
         return socialSharingMapper.getSocialSharingByuserId(userId);
+    }
+    public List<SocialSharing> getSocialSharings() {
+
+        // 调用 Mapper 获取数据
+        return socialSharingMapper.getSocialSharings();
     }
 }

@@ -1,5 +1,6 @@
 package com.example.petback.mapper;
 
+import com.example.petback.entity.Education;
 import com.example.petback.entity.SocialSharing;
 import org.apache.ibatis.annotations.*;
 
@@ -19,4 +20,7 @@ public interface SocialSharingMapper {
 
     @Select("SELECT * FROM socialsharing WHERE userId = #{userId}")
     List<SocialSharing> getSocialSharingByuserId(int userId);
+
+    @Select("SELECT * FROM socialsharing")
+    List<SocialSharing> getSocialSharings();
 }

@@ -4,6 +4,8 @@ public class SocialSharing {
     private int sharingId;
     private int userId;
     private String sharingContent;
+
+    private String userName;
     private String reason;
 
     // Constructors, getters, and setters
@@ -11,10 +13,11 @@ public class SocialSharing {
     public SocialSharing() {
     }
 
-    public SocialSharing(int sharingId, int userId,String sharingContent) {
+    public SocialSharing(int sharingId, int userId, String sharingContent, String userName, String reason) {
         this.sharingId = sharingId;
         this.userId = userId;
         this.sharingContent = sharingContent;
+        this.userName = userName;
         this.reason = reason;
     }
 
@@ -48,5 +51,13 @@ public class SocialSharing {
 
     public void setReason(String reason) {
         this.reason = reason;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }

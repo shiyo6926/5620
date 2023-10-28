@@ -13,8 +13,6 @@ public class EducationService {
     @Autowired
     private EducationMapper educationMapper;
     public List<Education> getEducations() {
-        // 检查参数是否为空
-        List<Education> list =new ArrayList<>();;
 
         // 调用 Mapper 获取数据
         return educationMapper.getEducations();
