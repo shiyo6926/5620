@@ -9,18 +9,10 @@ public class User
     private Integer userId;
     private String userName;
     private String password;
-    private String pet;
     private String email;
     private String userType;
-    private int userState;
 
-    public int getUserState() {
-        return userState;
-    }
 
-    public void setUserState(int userState) {
-        this.userState = userState;
-    }
 
     public Integer getUserId() {
         return userId;
@@ -42,13 +34,6 @@ public class User
         this.password = password;
     }
 
-    public String getPet() {
-        return pet;
-    }
-
-    public void setPet(String pet) {
-        this.pet = pet;
-    }
 
     public String getEmail() {
         return email;
