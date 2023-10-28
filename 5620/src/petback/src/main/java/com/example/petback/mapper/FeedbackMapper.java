@@ -16,6 +16,6 @@ public interface FeedbackMapper {
     List<Feedback> send(Feedback feedback);
     @Update("UPDATE feedback SET status= #{status} where feedbackId = #{feedbackId} ")
     int update(Feedback feedback);
-    @Select("SELECT status FROM feedback WHERE feedbackId = #{feedbackId}")
+    @Select("SELECT * FROM feedback WHERE feedbackId = #{feedbackId}")
     List<Feedback> sendfeedbackstatus(Feedback feedback);
 }
