@@ -12,7 +12,7 @@ import com.example.petback.service.FeedbackService;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/receiveFeedback")
+@RequestMapping("/receivefeedback")
 public class receiveFeedbackController {
     @Autowired
     private FeedbackService feedbackService;
